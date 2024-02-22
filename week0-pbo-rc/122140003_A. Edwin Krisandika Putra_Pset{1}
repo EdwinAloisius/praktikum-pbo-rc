@@ -1,0 +1,20 @@
+n = int(input("Masukkan tinggi segitiga : "))
+cek = 0
+
+for i in range(1, n+1):
+  #Penulisan spasi, baris paling atas akan memiliki spasi paling banyak
+  #semakin ke bawah spasi yang dicetak semakin sedikit
+  for j in range(1, (n - i) + 1):
+    print(end = " ")
+
+  # print segitiga
+  # fungsi while akan mengecek apakah cek sama dengan 2*i-1, 
+  #angka ini akan membuat bintang lebih banyak setiap barisnya, 
+  #karena baris pertama i adalah 1 dan akan bertambah setiap baris
+  while cek!= (2*i-1):
+    print("*", end ="")
+    cek = cek + 1
+
+  #cek kembali ke 0 agar * pada baris selanjutnya dihitung dari 0 lagi
+  cek = 0
+  print()

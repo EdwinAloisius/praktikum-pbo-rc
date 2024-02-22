@@ -1,0 +1,9 @@
+n = int(input("Masukkan jumlah data : "))
+MyDict = {}
+
+for i in range(n):
+  key = input("Masukkan nama : ")
+  value = int(input("Masukkan nilai : "))
+  MyDict[key] = value
+
+print(MyDict)

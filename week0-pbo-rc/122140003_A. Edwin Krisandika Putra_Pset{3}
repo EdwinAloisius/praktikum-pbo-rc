@@ -1,0 +1,8 @@
+with open('Me.txt', 'w+') as text:
+  text.write("Nama : Aloisius Edwin\nNIM : 122140003\nResolusi Saya di tahun ini : welowelweo")
+  text.close()
+
+with open('Me.txt', 'r') as text:
+  print(text.read())
+  text.close()
+
